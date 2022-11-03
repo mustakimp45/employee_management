@@ -11,6 +11,8 @@ public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long empId;
+	
+	@Column(name="emp_firstname")
     private String firstName;
     private String lastName;
     private Date dateOfBirth;
